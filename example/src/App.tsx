@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'juanpablo-package';
+import { multiply, saludar } from 'juanpablo-package';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
@@ -13,6 +13,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
+      <Text style={{fontSize: 25}}>{saludar('Juan Pablo')}</Text>
     </View>
   );
 }
