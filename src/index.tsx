@@ -18,7 +18,7 @@ const JuanpabloPackage = NativeModules.JuanpabloPackage
     );
 
 export function multiply(a: number, b: number): Promise<number> {
-  return JuanpabloPackage.multiply(a, b * a);
+  return JuanpabloPackage.multiply(a, b);
 }
 
 export const saludar = (name: string) => {
